@@ -9,7 +9,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
-      - "8080:8080"
+      - "80:8080"
     environment:
       DB_URL: ${DB_URL}
       DB_USERNAME: ${DB_USERNAME}
@@ -33,11 +33,3 @@ services:
     image: ${REGISTRY}/${REPOSITORY}:${TAG2}
     ports:
       - "9090:8080"
-
-  nginx:
-    build:
-      context: ./nginx
-      dockerfile: Dockerfile
-    image: ${REGISTRY}/${REPOSITORY}:${TAG3}
-    ports:
-      - "80:80"

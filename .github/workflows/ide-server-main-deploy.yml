@@ -30,7 +30,6 @@ jobs:
           REPOSITORY: ${{ secrets.AWS_ECR_NAME }}
           TAG1: ${{ secrets.AWS_ECR_TAG1 }}
           TAG2: ${{ secrets.AWS_ECR_TAG2 }}
-          TAG3: ${{ secrets.AWS_ECR_TAG3 }}
           TEST_DB_URL: ${{ secrets.TEST_DB_URL }}
           TEST_DB_USERNAME: ${{ secrets.TEST_DB_USERNAME }}
           TEST_DB_PASSWORD: ${{ secrets.TEST_DB_PASSWORD }}
